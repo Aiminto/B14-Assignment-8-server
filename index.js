@@ -35,10 +35,10 @@ export async function connectToMongoDB() {
 }
 
 const connectClient = await connectToMongoDB();
-const db = connectClient.db("assign")
+const db = connectClient.db("assign-8")
 const facilitiesCollection = db.collection("facilities")
-const facilitiesCollection1 = db.collection("facilities")
-const facilitiesCollection2 = db.collection("facilities")
+// const facilitiesCollection1 = db.collection("facilities")
+// const facilitiesCollection2 = db.collection("facilities")
 
 
 
@@ -60,17 +60,17 @@ app.post("/event-booking", async(req, res)=>{
 
 })
 
-const users =[
-  {id: 1, name: "Hasan vais", email: "withthemind@gmail.com", age: 24},
-  {id: 1, name: "Home", email: "withthemind@gmail.com", age: 27},
-  {id: 1, name: "about", email: "withthemind@gmail.com", age: 25},
-  {id: 1, name: "contact", email: "withthemind@gmail.com", age: 32},
-]
+// const users =[
+//   {id: 1, name: "Hasan vais", email: "withthemind@gmail.com", age: 24},
+//   {id: 1, name: "Home", email: "withthemind@gmail.com", age: 27},
+//   {id: 1, name: "about", email: "withthemind@gmail.com", age: 25},
+//   {id: 1, name: "contact", email: "withthemind@gmail.com", age: 32},
+// ]
 
-app.get("/users", (req, res)=>{
-    //  res.send({message: " my first server "})
-    res.send(users)
-})
+// app.get("/users", (req, res)=>{
+//     //  res.send({message: " my first server "})
+//     res.send(users)
+// })
 
 
 
